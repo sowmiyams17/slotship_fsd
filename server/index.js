@@ -11,7 +11,8 @@ connectDB();
 // CORS — allow frontend origin
 const allowedOrigins = [
   'http://localhost:5173', // Vite default
-  'http://localhost:3000',
+  process.env.CLIENT_URL,
+  'https://slotship-fsd.vercel.app',
 ];
 
 app.use(
